@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Job Outreach Playbook Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tech Job Outreach Playbook Generator</h1>
+    <form id="playbook-form">
+      <label for="persona">Target Job Title:</label>
+      <input type="text" id="persona" placeholder="e.g. Account Executive" value="Account Executive" required/>
+
+      <label for="goal">Outreach Goal:</label>
+      <select id="goal" required>
+        <option value="">-- Select --</option>
+        <option value="book-call">Request Informational Interview</option>
+        <option value="introduce-product">Pitch Yourself as a Candidate</option>
+        <option value="follow-up-demo">Follow Up After Career Fair</option>
+      </select>
+
+      <button type="submit">Generate Playbook</button>
+    </form>
+
+    <div id="output" class="hidden">
+      <h2>Your Outreach Strategy</h2>
+      <div id="result-content"></div>
+      <button id="download-btn">Download Playbook</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
